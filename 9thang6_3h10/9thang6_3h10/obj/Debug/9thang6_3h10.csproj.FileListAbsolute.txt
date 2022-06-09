@@ -1,0 +1,11 @@
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\9thang6_3h10\9thang6_3h10\bin\Debug\9thang6_3h10.exe.config
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\9thang6_3h10\9thang6_3h10\bin\Debug\9thang6_3h10.exe
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\9thang6_3h10\9thang6_3h10\bin\Debug\9thang6_3h10.pdb
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\9thang6_3h10\9thang6_3h10\obj\Debug\9thang6_3h10.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\9thang6_3h10\9thang6_3h10\obj\Debug\9thang6_3h10.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\9thang6_3h10\9thang6_3h10\obj\Debug\_9thang6_3h10.Form1.resources
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\9thang6_3h10\9thang6_3h10\obj\Debug\_9thang6_3h10.Properties.Resources.resources
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\9thang6_3h10\9thang6_3h10\obj\Debug\9thang6_3h10.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\9thang6_3h10\9thang6_3h10\obj\Debug\9thang6_3h10.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\9thang6_3h10\9thang6_3h10\obj\Debug\9thang6_3h10.exe
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\9thang6_3h10\9thang6_3h10\obj\Debug\9thang6_3h10.pdb
