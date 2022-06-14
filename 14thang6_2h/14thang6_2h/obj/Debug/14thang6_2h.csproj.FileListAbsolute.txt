@@ -1,0 +1,11 @@
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\14thang6_2h\14thang6_2h\bin\Debug\14thang6_2h.exe.config
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\14thang6_2h\14thang6_2h\bin\Debug\14thang6_2h.exe
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\14thang6_2h\14thang6_2h\bin\Debug\14thang6_2h.pdb
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\14thang6_2h\14thang6_2h\obj\Debug\14thang6_2h.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\14thang6_2h\14thang6_2h\obj\Debug\14thang6_2h.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\14thang6_2h\14thang6_2h\obj\Debug\_14thang6_2h.FormFavorite.resources
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\14thang6_2h\14thang6_2h\obj\Debug\_14thang6_2h.Properties.Resources.resources
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\14thang6_2h\14thang6_2h\obj\Debug\14thang6_2h.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\14thang6_2h\14thang6_2h\obj\Debug\14thang6_2h.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\14thang6_2h\14thang6_2h\obj\Debug\14thang6_2h.exe
+C:\Users\ASUS\Desktop\hnet\cs-winform\lv1\14thang6_2h\14thang6_2h\obj\Debug\14thang6_2h.pdb

@@ -68,27 +68,27 @@ namespace _9thang6_3h10
             {
                 string name = txtName.Text;
                 string address = txtName.Text;
-                string month = txtMonth.Text;
 
-                int firtsNum = int.Parse(txtFirtsNum.Text);
-                int lastNum = int.Parse(txtLastNum.Text);
-
-                if (firtsNum < 0)
+                int month = int.Parse(txtMonth.Text);
+                if(month < 1 || month > 12)
                 {
-                    DialogResult result = MessageBox.Show(
-                        "Số công tơ điện phải lớn hơn 0 ! Nhập lại : ",
+                    MessageBox.Show(
+                        "Nhap sai so Thang",
                         "Thong bao",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error
                     );
                 }
                 else
-                {
+                { 
 
-                    if (lastNum < firtsNum)
+                int firtsNum = int.Parse(txtFirtsNum.Text);
+                int lastNum = int.Parse(txtLastNum.Text);
+
+                    if (firtsNum < 0)
                     {
                         DialogResult result = MessageBox.Show(
-                            "Số công tơ điện tháng này phải lớn hơn tháng trước ! Nhập lại ",
+                            "Số công tơ điện phải lớn hơn 0 ! Nhập lại : ",
                             "Thong bao",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Error
@@ -96,28 +96,50 @@ namespace _9thang6_3h10
                     }
                     else
                     {
-                        int soDien = lastNum - firtsNum;
-                        int donGia = 1200;
-                        if (soDien >= 100) donGia = 2000;
 
-                        txtOutput.Text = $"Ho ten : {name} \r\n \r\n" +
-                            $"Dia chi : {address} \r\n \r\n" +
-                            $"Thang : {month} \r\n \r\n" +
-                            $"Tien dien : {soDien * donGia} đ";
+                        if (lastNum < firtsNum)
+                        {
+                            DialogResult result = MessageBox.Show(
+                                "Số công tơ điện tháng này phải lớn hơn tháng trước ! Nhập lại ",
+                                "Thong bao",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error
+                            );
+                        }
+                        else
+                        {
+                            int soDien = lastNum - firtsNum;
+                            int donGia = 1200;
+                            if (soDien >= 100) donGia = 2000;
 
-                        //MessageBox.Show(
-                        //    $"Ho ten : {name} \r\n \r\n" +
-                        //    $"Dia chi : {address} \r\n \r\n" +
-                        //    $"Thang : {month} \r\n \r\n" +
-                        //    $"Tien dien : {soDien * donGia} đ",
-                        //    "Thong bao",
-                        //    MessageBoxButtons.OK,
-                        //    MessageBoxIcon.Information
-                        //);
+                            txtOutput.Text = $"Ho ten : {name} \r\n \r\n" +
+                                $"Dia chi : {address} \r\n \r\n" +
+                                $"Thang : {month} \r\n \r\n" +
+                                $"Tien dien : {soDien * donGia} đ";
+
+                            MessageBox.Show(
+                                $"Ho ten : {name} \r\n \r\n" +
+                                $"Dia chi : {address} \r\n \r\n" +
+                                $"Thang : {month} \r\n \r\n" +
+                                $"Tien dien : {soDien * donGia} đ",
+                                "Thong bao",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information
+                            );
+                        }
                     }
                 }
             }
         }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn muốn thoát chương trình ? ",
+                "Thong bao",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+            if (result == DialogResult.Yes) Close();
+        }
     }
 }

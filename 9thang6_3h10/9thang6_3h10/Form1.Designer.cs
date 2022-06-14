@@ -47,6 +47,7 @@
             this.btnHoaDon = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.txtOutput = new System.Windows.Forms.TextBox();
+            this.btnThoat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -69,7 +70,7 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.panel2);
             this.splitContainer1.Size = new System.Drawing.Size(1047, 450);
-            this.splitContainer1.SplitterDistance = 476;
+            this.splitContainer1.SplitterDistance = 475;
             this.splitContainer1.TabIndex = 0;
             // 
             // panel1
@@ -89,12 +90,13 @@
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(476, 450);
+            this.panel1.Size = new System.Drawing.Size(475, 450);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnThoat);
             this.panel2.Controls.Add(this.txtOutput);
             this.panel2.Controls.Add(this.btnHoaDon);
             this.panel2.Controls.Add(this.label2);
@@ -102,7 +104,7 @@
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(567, 450);
+            this.panel2.Size = new System.Drawing.Size(568, 450);
             this.panel2.TabIndex = 0;
             // 
             // label1
@@ -111,7 +113,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(476, 32);
+            this.label1.Size = new System.Drawing.Size(475, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Thong tin KH";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -123,7 +125,7 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Top;
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(567, 32);
+            this.label2.Size = new System.Drawing.Size(568, 32);
             this.label2.TabIndex = 0;
             this.label2.Text = "Hoa Don KH";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -219,13 +221,15 @@
             // 
             // btnHoaDon
             // 
+            this.btnHoaDon.BackColor = System.Drawing.Color.Lime;
+            this.btnHoaDon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHoaDon.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnHoaDon.Location = new System.Drawing.Point(0, 32);
             this.btnHoaDon.Name = "btnHoaDon";
             this.btnHoaDon.Size = new System.Drawing.Size(115, 418);
             this.btnHoaDon.TabIndex = 1;
             this.btnHoaDon.Text = "Xuat Hoa Don";
-            this.btnHoaDon.UseVisualStyleBackColor = true;
+            this.btnHoaDon.UseVisualStyleBackColor = false;
             this.btnHoaDon.Click += new System.EventHandler(this.button1_Click);
             // 
             // contextMenuStrip1
@@ -240,8 +244,21 @@
             this.txtOutput.Location = new System.Drawing.Point(115, 32);
             this.txtOutput.Multiline = true;
             this.txtOutput.Name = "txtOutput";
-            this.txtOutput.Size = new System.Drawing.Size(452, 418);
+            this.txtOutput.Size = new System.Drawing.Size(453, 418);
             this.txtOutput.TabIndex = 2;
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThoat.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnThoat.Location = new System.Drawing.Point(115, 384);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(453, 66);
+            this.btnThoat.TabIndex = 3;
+            this.btnThoat.Text = "Thoat";
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 
@@ -250,6 +267,7 @@
             this.ClientSize = new System.Drawing.Size(1047, 450);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -283,6 +301,7 @@
         private System.Windows.Forms.TextBox txtOutput;
         private System.Windows.Forms.Button btnHoaDon;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.Button btnThoat;
     }
 }
 
