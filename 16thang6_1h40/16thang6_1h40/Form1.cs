@@ -69,7 +69,7 @@ namespace _16thang6_1h40
                 }
                 else
                 {
-                    message($"Diem Trung Binh la : {TB}", "Ket Qua" , "info");
+                    message($"Diem Trung Binh la : {TB} \nXep loai : {xepLoai(TB)}", "Ket Qua" , "info");
                 }
             }
         }
@@ -129,7 +129,7 @@ namespace _16thang6_1h40
                 else
                 {
                     diem = diemChu(TB);
-                    message($"Diem chu la : {diem}", "Ket Qua","info");
+                    message($"Diem chu la : {diem} \nXep loai : {xepLoai(TB)}", "Ket Qua","info");
                 }
             }
         }
@@ -142,6 +142,17 @@ namespace _16thang6_1h40
             else if (TB >= 5) diem = "C";
             else if (TB >= 3.5) diem = "D";
             else diem = "E";
+            return diem;
+        }
+
+        string xepLoai(float TB)
+        {
+            string diem = "";
+            if (TB >= 8) diem = "Gioi";
+            else if (TB >= 6.5) diem = "Kha";
+            else if (TB >= 5) diem = "TB";
+            else if (TB >= 3.5) diem = "Yeu";
+            else diem = "Kem";
             return diem;
         }
 
@@ -211,10 +222,35 @@ namespace _16thang6_1h40
                 $"Lop : {txtLop.Text} \r\n" +
                 $"Nam Sinh : {txtNamSinh.Text} \r\n" +
                 $"Diem Trung Binh : {diemTB()}\r\n" +
-                $"Diem Xep Loai : {diemChu(diemTB())} \r\n" ,
+                $"Diem chu : {diemChu(diemTB())} \r\n" +
+                $"Xep Loai : {xepLoai(diemTB())} \r\n" ,
                 "SV" ,
                 "info"
             );
+        }
+
+        private void txtC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Avatar_Click(object sender, EventArgs e)
+        {
+            string filepath = null;
+            OpenFileDialog ofdImages = new OpenFileDialog();
+            if (ofdImages.ShowDialog() == DialogResult.OK)
+            {
+                filepath = ofdImages.FileName;
+            }
+
+            pictureAvatar.Image = Image.FromFile(filepath.ToString());
+            pictureAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
+
+        }
+
+        private void pictureAvatar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
